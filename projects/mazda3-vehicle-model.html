@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mazda 3 Vehicle Dynamics Model — Evan Fistel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+
+<nav class="nav">
+  <div class="wrap">
+    <a class="brand" href="../index.html">Evan Fistel</a>
+    <ul>
+      <li><a href="../index.html#projects">Projects</a></li>
+      <li><a href="../index.html#experience">Experience</a></li>
+      <li><a href="../index.html#about">About</a></li>
+    </ul>
+  </div>
+</nav>
+
+<article class="article">
+  <div class="wrap">
+    <header>
+      <p class="eyebrow">Project · MATLAB / Simulink</p>
+      <h1>Mazda 3 Vehicle Dynamics Model</h1>
+      <p class="lead" style="font-size:19px;color:var(--muted);max-width:700px">
+        A full-vehicle Simulink model of a 2018 Mazda 3, parameterized from real specifications using Vehicle Dynamics Blockset.
+      </p>
+      <div class="meta">
+        <div><span>Tools</span>MATLAB · Simulink · Vehicle Dynamics Blockset</div>
+        <div><span>Timeline</span>2026</div>
+        <div><span>Type</span>Personal project</div>
+        <div><span>Code / files</span><a href="https://github.com/evanfistel/REPO">GitHub repo</a></div>
+      </div>
+    </header>
+
+    <figure>
+      <div class="placeholder">Hero image — top level of the Simulink model, or a key response plot (e.g. step-steer yaw rate)</div>
+      <figcaption>Caption.</figcaption>
+    </figure>
+
+    <h2>The problem</h2>
+    <p>I wanted a full-vehicle model of a real production car — a 2018 Mazda 3 hatchback 2.5L Premium — that I could
+       use to study braking, handling, and powertrain behavior, parameterized from real specifications rather than default values.</p>
+
+    <h2>Approach</h2>
+    <p>I built the model in MATLAB/Simulink using the Vehicle Dynamics Blockset and replaced the reference vehicle's parameters subsystem by subsystem:</p>
+    <ul>
+      <li><strong>Brakes:</strong> <!-- TODO: rotor/caliper sizes, bias, sources --></li>
+      <li><strong>Tires:</strong> <!-- TODO: tire size, model used, how coefficients were chosen --></li>
+      <li><strong>Suspension:</strong> <!-- TODO: geometry, spring/damper rates, sources --></li>
+      <li><strong>Engine &amp; ECU:</strong> <!-- TODO: torque curve source, mapping --></li>
+    </ul>
+
+    <figure>
+      <div class="placeholder">Process image — subsystem block diagram or parameter table</div>
+      <figcaption>Caption.</figcaption>
+    </figure>
+
+    <h2>Validation</h2>
+    <p><!-- TODO: compare a simulated result to a published figure, e.g. 0–60 mph time or 60–0 braking distance from a road test --></p>
+
+    <h2>Results</h2>
+    <div class="results">
+      <div class="stat"><b>—</b><span>simulated 0–60 mph (s)</span></div>
+      <div class="stat"><b>—</b><span>published 0–60 mph (s)</span></div>
+      <div class="stat"><b>—</b><span>60–0 braking distance (ft)</span></div>
+    </div>
+    <p><!-- TODO: what the comparison shows --></p>
+
+    <h2>What I'd do differently</h2>
+    <p class="note"><!-- TODO --></p>
+  </div>
+</article>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Evan Fistel</span>
+    <span><a href="../index.html">← Back to all projects</a></span>
+  </div>
+</footer>
+
+</body>
+</html>

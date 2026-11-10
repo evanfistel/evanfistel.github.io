@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>F1 Telemetry: Where the Lap Time Goes — Evan Fistel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+
+<nav class="nav">
+  <div class="wrap">
+    <a class="brand" href="../index.html">Evan Fistel</a>
+    <ul>
+      <li><a href="../index.html#projects">Projects</a></li>
+      <li><a href="../index.html#experience">Experience</a></li>
+      <li><a href="../index.html#about">About</a></li>
+    </ul>
+  </div>
+</nav>
+
+<article class="article">
+  <div class="wrap">
+    <header>
+      <p class="eyebrow">Project · Data Analysis</p>
+      <h1>F1 Telemetry: Where the Lap Time Goes</h1>
+      <p class="lead" style="font-size:19px;color:var(--muted);max-width:700px">
+        Using public F1 telemetry to break a qualifying lap delta down corner by corner.
+      </p>
+      <div class="meta">
+        <div><span>Tools</span>Python · FastF1 · pandas · matplotlib</div>
+        <div><span>Timeline</span>2026</div>
+        <div><span>Type</span>Personal project</div>
+        <div><span>Code / files</span><a href="https://github.com/evanfistel/REPO">GitHub repo</a></div>
+      </div>
+    </header>
+
+    <figure>
+      <div class="placeholder">Hero image — speed trace of both laps with corner labels, delta-time panel underneath</div>
+      <figcaption>Caption.</figcaption>
+    </figure>
+
+    <h2>The question</h2>
+    <p>Two drivers set fastest laps within a few tenths of each other. Where exactly is that time gained and lost,
+       and what does the telemetry suggest about how each driver approached the corners?</p>
+
+    <h2>Approach</h2>
+    <ul>
+      <li>Loaded session data with the FastF1 Python library and selected each driver's fastest lap.</li>
+      <li>Interpolated both laps onto a common distance axis so traces line up corner by corner.</li>
+      <li>Computed a running time delta and split the lap into braking, cornering, and traction zones.</li>
+      <li>Compared braking points, minimum corner speeds, and throttle application on exit.</li>
+    </ul>
+
+    <figure>
+      <div class="placeholder">Track map colored by which driver was faster in each mini-sector</div>
+      <figcaption>Caption.</figcaption>
+    </figure>
+
+    <h2>Findings</h2>
+    <div class="results">
+      <div class="stat"><b>—</b><span>total lap delta (s)</span></div>
+      <div class="stat"><b>—</b><span>delta in braking zones</span></div>
+      <div class="stat"><b>—</b><span>delta on corner exit</span></div>
+    </div>
+    <p><!-- TODO: the story the data tells --></p>
+
+    <h2>Limitations</h2>
+    <p class="note">Public telemetry is sampled at a low rate and doesn't include steering, tire, or fuel data, so
+       conclusions about technique are inferences. <!-- TODO: what you'd add next --></p>
+  </div>
+</article>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Evan Fistel</span>
+    <span><a href="../index.html">← Back to all projects</a></span>
+  </div>
+</footer>
+
+</body>
+</html>

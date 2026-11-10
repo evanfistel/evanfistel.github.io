@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Evan Fistel — Mechanical Engineering</title>
+  <meta name="description" content="Evan Fistel — Mechanical Engineering student at The University of Alabama. Vehicle dynamics, motorsport, CAD, FEA and simulation projects.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap">
+    <a class="brand" href="index.html">Evan Fistel</a>
+    <ul>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a class="resume-link" href="assets/Evan_Fistel_Resume.pdf">Resume</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow">Mechanical Engineering · The University of Alabama</p>
+      <h1>Evan Fistel</h1>
+      <p class="lead">
+        Mechanical engineering student focused on vehicle dynamics, motorsport, and
+        manufacturing. Three co-op terms at Mercedes-Benz U.S. International,
+        Team Lead on a robotic composites printing project with Los Alamos National Laboratory,
+        and propulsion &amp; controls with UA EcoCar.
+      </p>
+      <div class="links">
+        <a class="btn primary" href="#projects">View projects</a>
+        <a class="btn resume-link" href="assets/Evan_Fistel_Resume.pdf">Resume (PDF)</a>
+        <a class="btn" href="https://www.linkedin.com/in/EvanFistel">LinkedIn</a>
+        <a class="btn" href="https://github.com/evanfistel">GitHub</a>
+      </div>
+    </div>
+    <!-- Drop your headshot at assets/img/headshot.jpg -->
+    <img class="headshot" src="assets/img/headshot.jpg" alt="Evan Fistel" onerror="this.remove()">
+  </div>
+</header>
+
+<main>
+
+  <!-- ================= PROJECTS ================= -->
+  <section id="projects">
+    <div class="wrap">
+      <p class="eyebrow">Selected work</p>
+      <h2>Projects</h2>
+
+      <!-- To add a project: copy one <a class="card"> block, point href at its page in /projects,
+           and drop a 16:9 image in assets/img/. Delete any card you haven't built yet. -->
+      <div class="grid">
+
+        <a class="card" href="projects/mazda3-vehicle-model.html">
+          <div class="thumb">
+            <!-- <img src="assets/img/mazda3-thumb.png" alt=""> -->
+            Simulink model screenshot
+          </div>
+          <div class="body">
+            <span class="status">Write-up in progress</span>
+            <h3>Mazda 3 Vehicle Dynamics Model</h3>
+            <p>Full-vehicle model of a 2018 Mazda 3 built in MATLAB/Simulink Vehicle Dynamics Blockset — brakes, tires, suspension, engine and ECU parameterized from real specifications.</p>
+            <div class="tags"><span class="tag">MATLAB</span><span class="tag">Simulink</span><span class="tag">Vehicle Dynamics</span></div>
+          </div>
+        </a>
+
+        <a class="card" href="projects/f1-telemetry-comparison.html">
+          <div class="thumb">Telemetry overlay plot</div>
+          <div class="body">
+            <span class="status">In progress</span>
+            <h3>F1 Telemetry: Where the Lap Time Goes</h3>
+            <p>Overlaying two drivers' fastest laps with FastF1 to break down braking points, minimum corner speed, and traction on exit.</p>
+            <div class="tags"><span class="tag">Python</span><span class="tag">FastF1</span><span class="tag">Data Analysis</span></div>
+          </div>
+        </a>
+
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= EXPERIENCE ================= -->
+  <section id="experience">
+    <div class="wrap">
+      <p class="eyebrow">Where I've worked</p>
+      <h2>Experience</h2>
+
+      <div class="timeline">
+
+        <div class="role">
+          <div class="when">Aug 2024 – Aug 2026</div>
+          <div>
+            <h3>Mechanical Engineering Co-op · 3 terms</h3>
+            <p class="org">Mercedes-Benz U.S. International · Vance, AL</p>
+            <ul>
+              <li><strong>Body Series Planning (2026):</strong> Managed a fleet of 140+ KUKA robots and supported robot orders for future projects; built an Excel/VBA tool to automate robot buyoff and handover; designated reuse and spare parts from decommissioned equipment, saving over $400,000.</li>
+              <li><strong>Joining Body (2025):</strong> Built a web-based visualization system in Ignition connected to 250+ lineside PLCs to support control-room operations.</li>
+              <li><strong>Joining Body (2024):</strong> Standardized a digital preventive-maintenance schedule, raising TPM completion ~36% and contributing to ~22% less downtime and a ~2.6% OEE gain; trained 100+ team members on the tool.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="role">
+          <div class="when">Aug 2026 – Present</div>
+          <div>
+            <h3>Team Lead · Senior Design</h3>
+            <p class="org">Robotic Printing of Non-Planar Architected Thermoset Composites · with Los Alamos National Laboratory</p>
+            <ul>
+              <li>Developing a direct-ink-writing system using a 6-axis robot and pneumatic dispenser to print non-planar, fiber-reinforced thermoset composites cured by radical-induced cationic frontal polymerization (RICFP).</li>
+              <li>Coordinating parallel materials and mechatronics subteams alongside PhD students, reporting to faculty advisors and LANL's Engineered Materials group.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="role">
+          <div class="when">Aug 2026 – Present</div>
+          <div>
+            <h3>Propulsion, Controls &amp; Modeling</h3>
+            <p class="org">UA EcoCar · EcoCAR Challenge</p>
+            <ul>
+              <li>Simulating and designing propulsion controls for a 2026 Chevrolet Blazer SS.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="role">
+          <div class="when">Aug 2023 – Aug 2026</div>
+          <div>
+            <h3>Aerodynamics Subteam</h3>
+            <p class="org">Crimson Racing · Formula SAE</p>
+            <ul>
+              <li>Manufactured carbon-fiber aerodynamic surfaces for the student-built car.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="role">
+          <div class="when">Aug 2023 – Present</div>
+          <div>
+            <h3>Regent &amp; Marshal</h3>
+            <p class="org">Theta Tau Professional Engineering Fraternity · Mu Chapter</p>
+            <ul>
+              <li>As Regent, ran chapter operations, managed a 10-person Executive Council, and led meetings of 70+ members.</li>
+              <li>As Marshal, oversaw the Bylaws, Risk Management, and Judiciary committees.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="role">
+          <div class="when">Apr 2026 – Present</div>
+          <div>
+            <h3>Ambassador</h3>
+            <p class="org">UA Engineering Career &amp; Development Center</p>
+            <ul>
+              <li>Advise students on UA's co-op program and work with visiting company representatives.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SKILLS ================= -->
+  <section id="skills">
+    <div class="wrap">
+      <p class="eyebrow">Toolkit</p>
+      <h2>Skills</h2>
+      <div class="skills">
+        <div class="skill-group">
+          <h3>CAD</h3>
+          <ul><li>SolidWorks</li><li>Siemens NX</li><li>GD&amp;T / drawings</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3>Simulation</h3>
+          <ul><li>ANSYS</li><li>MATLAB / Simulink</li><li>Vehicle Dynamics Blockset</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3>Programming &amp; Data</h3>
+          <ul><li>Python (FastF1, pandas)</li><li>Excel / VBA</li><li>Git &amp; GitHub</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3>Manufacturing</h3>
+          <ul><li>Ignition / PLC integration</li><li>KUKA robotics</li><li>SAP (iPro)</li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ABOUT ================= -->
+  <section id="about">
+    <div class="wrap prose">
+      <p class="eyebrow">About</p>
+      <h2>About me</h2>
+      <p>
+        I'm a mechanical engineering student at The University of Alabama with an Automotive minor,
+        graduating in December 2027. My interest in engineering started with LEGO Mindstorms and a
+        first-place finish at the Georgia Technology and Engineering Fair — and it's narrowed since
+        into vehicles: how they're designed, simulated, and built at scale.
+      </p>
+      <p>
+        I'm looking for roles in motorsport, automotive, and aerospace — especially work that
+        connects vehicle performance to data and simulation. Outside of class you'll find me
+        working on telemetry analysis and simulation projects.
+      </p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Evan Fistel</span>
+    <span>
+      <a href="mailto:evanfistel@gmail.com">evanfistel@gmail.com</a> ·
+      <a href="https://www.linkedin.com/in/EvanFistel">LinkedIn</a> ·
+      <a href="https://github.com/evanfistel">GitHub</a>
+    </span>
+  </div>
+</footer>
+
+<script>
+  // Hide resume links until assets/Evan_Fistel_Resume.pdf is uploaded
+  fetch('assets/Evan_Fistel_Resume.pdf', {method:'HEAD'}).then(r => {
+    if (!r.ok) document.querySelectorAll('.resume-link').forEach(a => (a.closest('li') || a).remove());
+  }).catch(() => {});
+</script>
+</body>
+</html>
